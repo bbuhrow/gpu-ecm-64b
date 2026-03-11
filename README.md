@@ -12,6 +12,8 @@ The default toolkit version is assumed to be 13+.  If you are using prior versio
 
 If you have a custom GMP install location, uncomment and fill in lines 33 and 34 of the Makefile.
 
+Has been built and tested on linux and on windows (msys2/mingw64).
+
 # OpenCL build instructions
 To build the OpenCL code for Nvidia or AMD GPUs, use the alternate Makefile.cl as "make -f Makefile.cl all"
 
@@ -23,6 +25,8 @@ make -f Makefile.cl all OCL_INCLUDE=/home/me/custom_ocl/include OCL_LIB=/home/me
 If you have a custom GMP location, do the same on the make line for that location, for example:
 
 make -f Makefile.cl all OCL_INCLUDE=/home/me/custom_ocl/include OCL_LIB=/home/me/custom_ocl/lib GMP_INCLUDE=/home/me/custom_gmp/include GMP_LIB=/home/me/custom_gmp/lib
+
+Has been built and tested on linux and on windows (msys2/mingw64).
 
 # Usage
 supply a filename with 64-bit or less integers to factor, one per line, using the -f flag
